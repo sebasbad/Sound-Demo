@@ -20,10 +20,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUd-i3-564">
                                 <rect key="frame" x="255" y="131" width="91" height="30"/>
                                 <state key="normal" title="Play Sound A"/>
+                                <connections>
+                                    <action selector="playSoundA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ep0-Ft-0Ed"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRn-Rb-zqU">
                                 <rect key="frame" x="255" y="285" width="91" height="30"/>
                                 <state key="normal" title="Play Sound B"/>
+                                <connections>
+                                    <action selector="playSoundB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3e8-q5-Lw8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
