@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4126051B1CEE5F21007B12C4 /* beep-attention.aif in Resources */ = {isa = PBXBuildFile; fileRef = 4126051A1CEE5F21007B12C4 /* beep-attention.aif */; };
+		4126051D1CEE5F42007B12C4 /* beep-hightone.aif in Resources */ = {isa = PBXBuildFile; fileRef = 4126051C1CEE5F42007B12C4 /* beep-hightone.aif */; };
 		419F854E1CED8210001FE8AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 419F854D1CED8210001FE8AC /* main.m */; };
 		419F85511CED8210001FE8AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 419F85501CED8210001FE8AC /* AppDelegate.m */; };
 		419F85541CED8210001FE8AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 419F85531CED8210001FE8AC /* ViewController.m */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4126051A1CEE5F21007B12C4 /* beep-attention.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "beep-attention.aif"; sourceTree = "<group>"; };
+		4126051C1CEE5F42007B12C4 /* beep-hightone.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "beep-hightone.aif"; sourceTree = "<group>"; };
 		419F85491CED8210001FE8AC /* Sound Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sound Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		419F854D1CED8210001FE8AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		419F854F1CED8210001FE8AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 		419F854B1CED8210001FE8AC /* Sound Demo */ = {
 			isa = PBXGroup;
 			children = (
+				419F85631CED881C001FE8AC /* Sounds */,
 				419F854F1CED8210001FE8AC /* AppDelegate.h */,
 				419F85501CED8210001FE8AC /* AppDelegate.m */,
 				419F85521CED8210001FE8AC /* ViewController.h */,
@@ -77,6 +82,15 @@
 				419F854D1CED8210001FE8AC /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		419F85631CED881C001FE8AC /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				4126051C1CEE5F42007B12C4 /* beep-hightone.aif */,
+				4126051A1CEE5F21007B12C4 /* beep-attention.aif */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +153,8 @@
 				419F855C1CED8210001FE8AC /* LaunchScreen.storyboard in Resources */,
 				419F85591CED8210001FE8AC /* Assets.xcassets in Resources */,
 				419F85571CED8210001FE8AC /* Main.storyboard in Resources */,
+				4126051B1CEE5F21007B12C4 /* beep-attention.aif in Resources */,
+				4126051D1CEE5F42007B12C4 /* beep-hightone.aif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +318,7 @@
 				419F85621CED8210001FE8AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
