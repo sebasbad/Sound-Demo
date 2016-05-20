@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    // Load the sound / create the sound ID
+    NSString *beepHightonePath = [[NSBundle mainBundle] pathForResource:@"beep-hightone" ofType:@"aif"];
+    NSURL *beepHightoneUrl = [NSURL fileURLWithPath:beepHightonePath];
+    
+    NSString *beepAttentionPath = [[NSBundle mainBundle] pathForResource:@"beep-attention" ofType:@"aif"];
+    NSURL *beepAttentionUrl = [NSURL fileURLWithPath:beepAttentionPath];
 }
 
 - (IBAction)playSoundA:(id)sender {
