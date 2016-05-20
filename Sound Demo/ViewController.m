@@ -71,6 +71,15 @@
         AudioServicesPlaySystemSound(self.beepAttention);
     }
 }
+
+- (void)dealloc {
+    if (self.beepHightoneGood) {
+        AudioServicesDisposeSystemSoundID(self.beepHightone);
+    }
+    
+    if (self.beepAttention) {
+        AudioServicesDisposeSystemSoundID(self.beepAttention);
+    }
 }
 
 @end
