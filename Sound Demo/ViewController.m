@@ -61,9 +61,16 @@
 }
 
 - (IBAction)playSoundA:(id)sender {
+    if (self.beepHightone) {
+        AudioServicesPlaySystemSound(self.beepHightone);
+    }
 }
 
 - (IBAction)playSoundB:(id)sender {
+    if (self.beepAttention) {
+        AudioServicesPlaySystemSound(self.beepAttention);
+    }
+}
 }
 
 @end
