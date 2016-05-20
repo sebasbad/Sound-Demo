@@ -6,9 +6,13 @@
 //  Copyright © 2016 Sebastian Badea. All rights reserved.
 //
 
+@import AudioToolbox;
 #import "ViewController.h"
 
 @interface ViewController ()
+
+@property (assign, nonatomic) SystemSoundID beepHightone;
+@property (assign, nonatomic) SystemSoundID beepAttention;
 
 @end
 
