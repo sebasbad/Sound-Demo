@@ -47,7 +47,7 @@
         [self presentViewController:alertController animated:YES completion:nil];
     }
     
-    OSStatus beepAttentionOSStatus = AudioServicesCreateSystemSoundID((__bridge CFURLRef)beepHightoneUrl, &_beepAttention);
+    OSStatus beepAttentionOSStatus = AudioServicesCreateSystemSoundID((__bridge CFURLRef)beepAttentionUrl, &_beepAttention);
     
     if (kAudioServicesNoError == beepAttentionOSStatus) {
         self.beepAttentionGood = YES;
