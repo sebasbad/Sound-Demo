@@ -7,12 +7,15 @@
 //
 
 @import AudioToolbox;
+@import AVFoundation.AVAudioPlayer;
 #import "ViewController.h"
 
 @interface ViewController ()
 
 @property (assign, nonatomic) SystemSoundID beepHightone;
 @property (assign, nonatomic) SystemSoundID beepAttention;
+
+@property (strong, nonatomic) AVAudioPlayer *player;
 
 @property (assign, nonatomic) BOOL beepHightoneGood;
 @property (assign, nonatomic) BOOL beepAttentionGood;
@@ -31,6 +34,9 @@
     
     NSString *beepAttentionPath = [[NSBundle mainBundle] pathForResource:@"beep-attention" ofType:@"aif"];
     NSURL *beepAttentionUrl = [NSURL fileURLWithPath:beepAttentionPath];
+    
+    NSString *songPath = [[NSBundle mainBundle] pathForResource:@"Allegro from Duet in C Major" ofType:@"mp3"];
+    NSURL *songUrl = [NSURL fileURLWithPath:songPath];
     
     // Archaic C code
     // __bridge = C-level cast
@@ -58,6 +64,16 @@
         [self presentViewController:alertController animated:YES completion:nil];
     }
     
+    NSError *error;
+    
+    // Set up AVAudioPlayer
+    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:songUrl error:&error];
+    
+    if (!self.player) {
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Couldn't load the mp3" message:[error localizedDescription] preferredStyle:UIAlertControllerStyleAlert];
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
+    
 }
 
 - (IBAction)playSoundA:(id)sender {
@@ -71,6 +87,19 @@
         AudioServicesPlaySystemSound(self.beepAttention);
     }
 }
+
+- (IBAction)playMedia:(id)sender {
+    if (self.player) {
+        [self.player play];
+    }
+}
+
+- (IBAction)stopMedia:(id)sender {
+    if (self.player) {
+        [self.player stop];
+    }
+}
+
 
 - (void)dealloc {
     if (self.beepHightoneGood) {
