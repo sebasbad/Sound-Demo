@@ -36,14 +36,12 @@
                                 <state key="normal" title="Play Media"/>
                                 <connections>
                                     <action selector="playMedia:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4R1-Up-VFx"/>
-                                    <action selector="playSoundB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ee1-5L-a32"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmq-cG-vKa">
                                 <rect key="frame" x="234" y="425" width="132" height="30"/>
                                 <state key="normal" title="Stop Playing Media"/>
                                 <connections>
-                                    <action selector="playSoundB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qIL-0d-aM7"/>
                                     <action selector="stopMedia:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oxE-er-88v"/>
                                 </connections>
                             </button>
