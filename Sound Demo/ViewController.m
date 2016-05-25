@@ -36,7 +36,7 @@
     NSURL *beepAttentionUrl = [NSURL fileURLWithPath:beepAttentionPath];
     
     NSString *songPath = [[NSBundle mainBundle] pathForResource:@"Allegro from Duet in C Major" ofType:@"mp3"];
-    NSURL *songUrl = [NSURL fileURLWithPath:beepAttentionPath];
+    NSURL *songUrl = [NSURL fileURLWithPath:songPath];
     
     // Archaic C code
     // __bridge = C-level cast
