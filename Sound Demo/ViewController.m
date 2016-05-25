@@ -89,9 +89,15 @@
 }
 
 - (IBAction)playMedia:(id)sender {
+    if (self.player) {
+        [self.player play];
+    }
 }
 
 - (IBAction)stopMedia:(id)sender {
+    if (self.player) {
+        [self.player stop];
+    }
 }
 
 
