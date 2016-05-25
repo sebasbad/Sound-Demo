@@ -64,6 +64,16 @@
         [self presentViewController:alertController animated:YES completion:nil];
     }
     
+    NSError *error;
+    
+    // Set up AVAudioPlayer
+    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:songUrl error:&error];
+    
+    if (!self.player) {
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Couldn't load the mp3" message:[error localizedDescription] preferredStyle:UIAlertControllerStyleAlert];
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
+    
 }
 
 - (IBAction)playSoundA:(id)sender {
