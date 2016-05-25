@@ -72,6 +72,13 @@
     }
 }
 
+- (IBAction)playMedia:(id)sender {
+}
+
+- (IBAction)stopMedia:(id)sender {
+}
+
+
 - (void)dealloc {
     if (self.beepHightoneGood) {
         AudioServicesDisposeSystemSoundID(self.beepHightone);

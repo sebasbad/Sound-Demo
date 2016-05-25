@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -31,13 +31,33 @@
                                     <action selector="playSoundB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3e8-q5-Lw8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ziY-p4-imQ">
+                                <rect key="frame" x="263" y="363" width="75" height="30"/>
+                                <state key="normal" title="Play Media"/>
+                                <connections>
+                                    <action selector="playMedia:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4R1-Up-VFx"/>
+                                    <action selector="playSoundB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ee1-5L-a32"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmq-cG-vKa">
+                                <rect key="frame" x="234" y="425" width="132" height="30"/>
+                                <state key="normal" title="Stop Playing Media"/>
+                                <connections>
+                                    <action selector="playSoundB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qIL-0d-aM7"/>
+                                    <action selector="stopMedia:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oxE-er-88v"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ziY-p4-imQ" firstAttribute="top" secondItem="rRn-Rb-zqU" secondAttribute="bottom" constant="48" id="1u0-HT-BF7"/>
                             <constraint firstItem="vUd-i3-564" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5pI-Xj-jTA"/>
                             <constraint firstItem="rRn-Rb-zqU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lfq-8V-ZeX"/>
                             <constraint firstItem="rRn-Rb-zqU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qju-QC-VeI"/>
+                            <constraint firstItem="gmq-cG-vKa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WXv-Kd-kIk"/>
+                            <constraint firstItem="gmq-cG-vKa" firstAttribute="top" secondItem="ziY-p4-imQ" secondAttribute="bottom" constant="32" id="er7-bn-ChM"/>
                             <constraint firstItem="rRn-Rb-zqU" firstAttribute="top" secondItem="vUd-i3-564" secondAttribute="bottom" constant="124" id="i6m-om-XBt"/>
+                            <constraint firstItem="ziY-p4-imQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kC0-vu-8xV"/>
                         </constraints>
                     </view>
                 </viewController>
