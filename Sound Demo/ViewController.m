@@ -7,12 +7,15 @@
 //
 
 @import AudioToolbox;
+@import AVFoundation.AVAudioPlayer;
 #import "ViewController.h"
 
 @interface ViewController ()
 
 @property (assign, nonatomic) SystemSoundID beepHightone;
 @property (assign, nonatomic) SystemSoundID beepAttention;
+
+@property (strong, nonatomic) AVAudioPlayer *player;
 
 @property (assign, nonatomic) BOOL beepHightoneGood;
 @property (assign, nonatomic) BOOL beepAttentionGood;
