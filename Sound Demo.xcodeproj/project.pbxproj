@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4126051B1CEE5F21007B12C4 /* beep-attention.aif in Resources */ = {isa = PBXBuildFile; fileRef = 4126051A1CEE5F21007B12C4 /* beep-attention.aif */; };
 		4126051D1CEE5F42007B12C4 /* beep-hightone.aif in Resources */ = {isa = PBXBuildFile; fileRef = 4126051C1CEE5F42007B12C4 /* beep-hightone.aif */; };
+		4194F4FD1CF5A66100E2C31C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4194F4FC1CF5A66100E2C31C /* GoogleService-Info.plist */; };
 		419F854E1CED8210001FE8AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 419F854D1CED8210001FE8AC /* main.m */; };
 		419F85511CED8210001FE8AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 419F85501CED8210001FE8AC /* AppDelegate.m */; };
 		419F85541CED8210001FE8AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 419F85531CED8210001FE8AC /* ViewController.m */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		4126051A1CEE5F21007B12C4 /* beep-attention.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "beep-attention.aif"; sourceTree = "<group>"; };
 		4126051C1CEE5F42007B12C4 /* beep-hightone.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "beep-hightone.aif"; sourceTree = "<group>"; };
+		4194F4FC1CF5A66100E2C31C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		419F85491CED8210001FE8AC /* Sound Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sound Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		419F854D1CED8210001FE8AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		419F854F1CED8210001FE8AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				419F85581CED8210001FE8AC /* Assets.xcassets */,
 				419F855A1CED8210001FE8AC /* LaunchScreen.storyboard */,
 				419F855D1CED8210001FE8AC /* Info.plist */,
+				4194F4FC1CF5A66100E2C31C /* GoogleService-Info.plist */,
 				419F854C1CED8210001FE8AC /* Supporting Files */,
 			);
 			path = "Sound Demo";
@@ -164,6 +167,7 @@
 				419F85571CED8210001FE8AC /* Main.storyboard in Resources */,
 				4126051B1CEE5F21007B12C4 /* beep-attention.aif in Resources */,
 				4126051D1CEE5F42007B12C4 /* beep-hightone.aif in Resources */,
+				4194F4FD1CF5A66100E2C31C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
