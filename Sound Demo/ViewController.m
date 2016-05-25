@@ -35,6 +35,9 @@
     NSString *beepAttentionPath = [[NSBundle mainBundle] pathForResource:@"beep-attention" ofType:@"aif"];
     NSURL *beepAttentionUrl = [NSURL fileURLWithPath:beepAttentionPath];
     
+    NSString *songPath = [[NSBundle mainBundle] pathForResource:@"Allegro from Duet in C Major" ofType:@"mp3"];
+    NSURL *songUrl = [NSURL fileURLWithPath:beepAttentionPath];
+    
     // Archaic C code
     // __bridge = C-level cast
     // Tells ARC to stop taking notice of casted object
