@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
+@import Firebase;
 
 
 @interface AppDelegate ()
@@ -22,6 +23,9 @@
     // Override point for customization after application launch.
     
     [Fabric with:@[[Crashlytics class]]];
+    
+    // Use Firebase library to configure APIs
+    [FIRApp configure];
     
     return YES;
 }
