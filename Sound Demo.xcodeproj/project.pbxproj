@@ -10,6 +10,7 @@
 		4126051B1CEE5F21007B12C4 /* beep-attention.aif in Resources */ = {isa = PBXBuildFile; fileRef = 4126051A1CEE5F21007B12C4 /* beep-attention.aif */; };
 		4126051D1CEE5F42007B12C4 /* beep-hightone.aif in Resources */ = {isa = PBXBuildFile; fileRef = 4126051C1CEE5F42007B12C4 /* beep-hightone.aif */; };
 		4194F4FD1CF5A66100E2C31C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4194F4FC1CF5A66100E2C31C /* GoogleService-Info.plist */; };
+		4194F4FF1CF5B46300E2C31C /* Allegro from Duet in C Major.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4194F4FE1CF5B46300E2C31C /* Allegro from Duet in C Major.mp3 */; };
 		419F854E1CED8210001FE8AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 419F854D1CED8210001FE8AC /* main.m */; };
 		419F85511CED8210001FE8AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 419F85501CED8210001FE8AC /* AppDelegate.m */; };
 		419F85541CED8210001FE8AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 419F85531CED8210001FE8AC /* ViewController.m */; };
@@ -25,6 +26,7 @@
 		4126051A1CEE5F21007B12C4 /* beep-attention.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "beep-attention.aif"; sourceTree = "<group>"; };
 		4126051C1CEE5F42007B12C4 /* beep-hightone.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "beep-hightone.aif"; sourceTree = "<group>"; };
 		4194F4FC1CF5A66100E2C31C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4194F4FE1CF5B46300E2C31C /* Allegro from Duet in C Major.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Allegro from Duet in C Major.mp3"; sourceTree = "<group>"; };
 		419F85491CED8210001FE8AC /* Sound Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sound Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		419F854D1CED8210001FE8AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		419F854F1CED8210001FE8AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		419F85631CED881C001FE8AC /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				4194F4FE1CF5B46300E2C31C /* Allegro from Duet in C Major.mp3 */,
 				4126051C1CEE5F42007B12C4 /* beep-hightone.aif */,
 				4126051A1CEE5F21007B12C4 /* beep-attention.aif */,
 			);
@@ -195,6 +198,7 @@
 				4126051B1CEE5F21007B12C4 /* beep-attention.aif in Resources */,
 				4126051D1CEE5F42007B12C4 /* beep-hightone.aif in Resources */,
 				4194F4FD1CF5A66100E2C31C /* GoogleService-Info.plist in Resources */,
+				4194F4FF1CF5B46300E2C31C /* Allegro from Duet in C Major.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
